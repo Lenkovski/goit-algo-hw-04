@@ -30,11 +30,9 @@ def total_salary(path):
         print(f"Помилка при читанні файлу: {e}")
         return (0, 0)
 
-# Шлях до файлу на робочому столі (macOS)
-desktop_path = os.path.expanduser("~/Desktop/path.txt")
+# Формування шляху до файлу на робочому столі
+desktop_path = os.path.join(os.path.expanduser("~"), "Desktop", "salary_file.txt")
 
-# Виклик функції
+# Виклик функції та виведення результату
 total, average = total_salary(desktop_path)
-
-# Вивід результату
 print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
