@@ -28,7 +28,7 @@ def get_cats_info(path):
 # Отримати шлях до файлу на Робочому столі
 desktop_path = os.path.expanduser("~/Desktop/cats_file.txt")
 
-# Виклик функції
+
 cats_info = get_cats_info(desktop_path)
 
 # Виведення результату
